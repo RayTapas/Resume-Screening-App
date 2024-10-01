@@ -20,6 +20,7 @@ def cleanResume(resume_text):
     return cleanText
 
 #web app
+
 def read_uploaded_file(uploaded_file):
     try:
         # Attempt to read the file
@@ -44,23 +45,8 @@ def make_prediction(cleaned_resume):
     except Exception as e:
         st.error(f"Unexpected error occurred during prediction: {str(e)}")
         return None
-
-# def main():        
-    # st.title("Resume Screening App")
-    # uploaded_file = st.file_uploader('Upload Resume', type=['txt','pdf'])
-
-    # if uploaded_file is not None:
-    #     try:
-    #         resume_bytes = uploaded_file.read()
-    #         resume_text = resume_bytes.decode('utf-8')
-    #     except UnicodeDecodeError:
-    #         resume_text = resume_bytes.decode('utf-8',errors='ignore')
-
-    #     cleaned_resume = cleanResume(resume_text)
-    #     input_features = tfidf.transform([cleaned_resume])
-    #     prediction_id = clf.predict(input_features)[0]
-    #     st.write(prediction_id)
-        #Map category ID to category name
+    
+#Map category ID to category name
 
 category_mapping = {
     6: "Data Science",
@@ -90,8 +76,7 @@ category_mapping = {
     23: "Testing",
 }
 
-        # category_name = category_mapping.get(prediction_id,"Unknown")
-        # st.write("Predicted Category:",category_name)
+
 def main():
     try:
         st.title("Resume Screening App")
