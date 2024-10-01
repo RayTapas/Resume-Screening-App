@@ -3,7 +3,7 @@ Project examines a person's résumé to determine what position they have in the
 This project made use of the following technologies: VS Code, Jupyter Notebook
 The Scikit-learn package facilitates machine learning and data analysis.
 KNeighbour Classification for testing and training data.
-A well-lit library for creating web applications.
+A streamlit library for creating web applications.
 Use Pandas and NumPy to manipulate the dataset.
 Seaborn and Matplotlib are tools for data visualization.
 Regular Expression for Cleaning Data.
